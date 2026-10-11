@@ -1,0 +1,10 @@
+.env
+venv/
+__pycache__/
+submission.zip
+output/cache/
+output_train/
+test/
+source/train_bills/
+source/train_csv/
+demo/
