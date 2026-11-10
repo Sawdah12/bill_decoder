@@ -1,0 +1,19 @@
+[project]
+name = "bill-decoder"
+version = "1.1.0"
+description = "Read Pakistani electricity bills (K-Electric, LESCO, IESCO) with Gemini vision, cross-check the numbers, and answer questions in plain English."
+requires-python = ">=3.11"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 120
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
+ignore = ["E731"]
+
+[tool.ruff.lint.per-file-ignores]
+"bill_decoder/prompts.py" = ["E501"]  # prompt text is kept as written

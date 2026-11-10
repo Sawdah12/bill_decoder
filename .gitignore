@@ -1,10 +1,18 @@
+# secrets
 .env
+
+# environments / caches
 venv/
+.venv/
 __pycache__/
-submission.zip
-output/cache/
-output_train/
+.pytest_cache/
+.ruff_cache/
+
+# local data: bill images contain personal details and are never committed
+source/
 test/
-source/train_bills/
-source/train_csv/
 demo/
+output/
+output_train/
+eval/predictions/
+submission.zip
